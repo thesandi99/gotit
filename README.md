@@ -1,11 +1,10 @@
 ---
-title: Moseca
+title: "thesandi99"
 emoji: 🎤🎸🥁🎹
 colorFrom: yellow
 colorTo: purple
 sdk: docker
 app_port: 7860
-models: ["https://huggingface.co/fabiogra/baseline_vocal_remover"]
 tags: ["audio", "music", "vocal-removal", "karaoke", "music-separation", "music-source-separation"]
 pinned: true
 ---
@@ -21,22 +20,9 @@ pinned: true
     <a href="https://huggingface.co/spaces/fabiogra/moseca/discussions?docker=true">
         <img src="https://img.shields.io/badge/-Docker%20Image-blue?logo=docker&labelColor=white" alt="Docker">
     </a>
-    <a href="https://www.buymeacoffee.com/fabiogra">
-        <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee--yellow.svg?logo=buy-me-a-coffee&logoColor=orange&style=social" alt="Buy me a coffee">
-    </a>
 </p>
 
 ---
-
-<p align="center">
-  <img src="https://i.imgur.com/QoSd3Fg.gif" alt="Demo Moseca"/>
-</p>
-<p align="center">
-    <a href="https://www.producthunt.com/posts/moseca?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-moseca" target="_blank">
-        <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=415833&theme=light" alt="Moseca - Extract vocals and instrument from any song | Product Hunt" width="250" height="54" />
-    </a>
-</p>
-
 
 - [Setup](#setup)
   - [Local environment](#local-environment)
@@ -108,8 +94,7 @@ python prepare_samples.sh
 ---
 ## About
 
-Welcome to Moseca, your personal web application designed to redefine your music experience.
-Whether you're a musician looking to remix your favorite songs, a karaoke
+ musician looking to remix your favorite songs, a karaoke
 enthusiast, or a music lover wanting to dive deeper into your favorite tracks,
 Moseca is for you.
 
@@ -186,57 +171,3 @@ each update.
 - Enjoy Moseca? [![Buymeacoffee](https://img.shields.io/badge/Buy%20me%20a%20coffee--yellow.svg?logo=buy-me-a-coffee&logoColor=orange&style=social)](https://www.buymeacoffee.com/fabiogra)
 
 ------
-
-## FAQs
-
-### What is Moseca?
-
-Moseca is an open-source web app that utilizes advanced AI technology to separate vocals and
-instrumentals from music tracks. It also provides an online karaoke experience by allowing you
-to search for any song on YouTube and remove the vocals.
-
-### Are there any limitations?
-Yes, in this environment there are some limitations regarding lenght processing
-and CPU usage to allow a smooth experience for all users.
-
-<b>If you want to <u>remove these limitations</u> you can deploy a Moseca app in your personal
-environment like in the <a href="https://huggingface.co/spaces/fabiogra/moseca?duplicate=true"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue" alt="Hugging Face Spaces"></a> or locally with [![Docker Call](https://img.shields.io/badge/-Docker%20Image-blue?logo=docker&labelColor=white)](https://huggingface.co/spaces/fabiogra/moseca/discussions?docker=true)</b>
-
-### How does Moseca work?
-Moseca utilizes the Hybrid Spectrogram and Waveform Source Separation ([DEMUCS](https://github.com/facebookresearch/demucs)) model from Facebook. For fast karaoke vocal removal, Moseca uses the AI vocal remover developed by [tsurumeso](https://github.com/tsurumeso/vocal-remover).
-
-### How do I use Moseca?
-1. Upload your file: choose your song and upload it to Moseca. It supports
-a wide range of music formats for your convenience.
-
-2. Choose separation mode: opt for voice only, 4-stem or 6-stem separation
-depending on your requirement.
-
-3. Let AI do its magic: Moseca’s advanced AI will work to separate vocals
-from music in a matter of minutes, giving you high-quality, separated audio tracks.
-
-4. Download and enjoy: preview and download your separated audio tracks.
-Now you can enjoy them anytime, anywhere!
-
-
-### Where can I find the code for Moseca?
-
-The code for Moseca is readily available on
-[GitHub](https://github.com/fabiogra/moseca) and
-[Hugging Face](https://huggingface.co/spaces/fabiogra/moseca).
-
-
-### How can I get in touch with you?
-
-For any questions or feedback, feel free to contact me on
-[![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com/grsFabio)
-or [LinkedIn](https://www.linkedin.com/in/fabio-grasso/en).
-
-------
-## Disclaimer
-
-Moseca is designed to separate vocals and instruments from copyrighted music for
-legally permissible purposes, such as learning, practicing, research, or other non-commercial
-activities that fall within the scope of fair use or exceptions to copyright. As a user, you are
-responsible for ensuring that your use of separated audio tracks complies with the legal
-requirements in your jurisdiction.
